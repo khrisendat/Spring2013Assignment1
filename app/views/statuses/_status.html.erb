@@ -1,0 +1,19 @@
+  <p>
+    <b>Status:</b>
+    <%= status.status%>
+  </p>
+ 
+  <p>
+    <b>Geocode:</b>
+    <%= status.geocode %>
+  </p>
+
+  <p>
+    <b>Image_URL:</b>
+    <%= status.image_url %>
+  </p>
+  <p>
+  <%= link_to 'Destroy Status', [status.user, status],
+               :confirm => 'Are you sure?',
+               :method => :delete %>
+</p>
